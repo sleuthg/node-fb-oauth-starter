@@ -31,3 +31,14 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# Webstorm index
+.idea
+
+# Angular libraries
+public/lib
+
+# Don't put development configuration code in the repo
+development.js
+
+

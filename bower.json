@@ -1,0 +1,34 @@
+{
+  "name": "node-fb-oauth-starter",
+  "main": "index.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sleuthg/node-fb-oauth-starter",
+  "authors": [
+    "Trevor Gile <sleuthg@gmail.com>"
+  ],
+  "description": "Starter kit for using Satellizer to do token-based authentication",
+  "moduleType": [
+    "node"
+  ],
+  "dependencies": {
+    "angular": "1.4.x",
+    "satellizer": "0.12.5"
+  },
+  "keywords": [
+    "satellizer",
+    "nodejs",
+    "express",
+    "angular",
+    "OAuth",
+    "Token",
+    "Based"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

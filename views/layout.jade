@@ -1,0 +1,27 @@
+doctype html
+html(ng-app="tbauth")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  //- The ng-app tag auto-bootstraps the Angular application.
+  body(ng-controller="LoginCtrl")
+
+    span(ng-if="!isAuthenticated()")
+      button(ng-click="authenticate('facebook')") Login with Facebook
+
+    span(ng-if="isAuthenticated()")
+      button(ng-click="logout()") Logout
+
+    block content
+
+    //- The base Angular library javascript file. You will always need this for doing
+      any Angular application.
+    script(type="text/javascript", src="/lib/angular/angular.js")
+
+    //- Satellizer is an Angular library for doing token-based OAuth authentication. It's
+      not the only way to do it, but I've found it to be pretty easy to use and robust.
+    script(type="text/javascript", src="/lib/satellizer/satellizer.js")
+
+    //- The Angular application that we're building is built in application.js
+    script(src="/application.js")

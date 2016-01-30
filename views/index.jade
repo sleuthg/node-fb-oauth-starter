@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p You're on the home page. It's not very interesing. However, knowing how to set up token-based authentication is pretty sweet.
+
+  div(ng-if="isAuthenticated()")
+    p Hey look, you did it!
+    img(ng-src="{{picture}}")
